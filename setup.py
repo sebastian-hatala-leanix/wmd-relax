@@ -1,13 +1,6 @@
 import os.path
 from setuptools import setup, Extension
 import platform
-try:
-    import numpy
-except ImportError as e:
-    print("=" * 80)
-    print("You need to install numpy *separately* and *before* installing this package(s).")
-    print("=" * 80)
-    raise e from None
 
 with open(os.path.join(os.path.dirname(__file__), "README.md"), encoding="utf-8") as f:
     long_description = f.read()
